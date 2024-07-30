@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox id="oracleHivePane" styleClass="vbox-custom" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.gov.df.economia.sistemaauditoriahiveoracle.gui.OracleHiveController">
+	<Label fx:id="tituloTableViews"
+		   text="QUANTIDADE DE ARQUIVOS E DOCUMENTOS NO ORACLE E NO HIVE"/>
+	<HBox styleClass="hbox">
+		<Label text="Diferença de Quantidade entre Oracle e Hive"
+			   styleClass="tituloTableViews"/>
+	</HBox>
+	<HBox styleClass="hbox-custom">
+		<Label text="Selecione a Tabela do Hive:" />
+		<ComboBox fx:id="comboTipoDoc" VBox.vgrow="ALWAYS" prefWidth="175" />
+	</HBox>
+		<Region VBox.vgrow="ALWAYS"/>
+		<TableView fx:id="tableViewOracleHive" VBox.vgrow="ALWAYS" prefHeight="573.0" prefWidth="800.0">
+			<columns>
+				<TableColumn fx:id="columnArquivo" text="Arquivo" />
+				<TableColumn fx:id="columnTipoDoc" text="Documento" />
+				<TableColumn fx:id="columnTabelaOracle" text="Tabela Oracle" />
+				<TableColumn fx:id="columnTabelaHive" text="Tabela Hive" />
+				<TableColumn fx:id="columnTotalOracle" text="Total Oracle" />
+				<TableColumn fx:id="columnTotalHive" text="Total Hive" />
+				<TableColumn fx:id="columnDiferenca" text="Diferença" />
+			</columns>
+			<columnResizePolicy>
+				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+			</columnResizePolicy>
+		</TableView>
+
+</VBox>

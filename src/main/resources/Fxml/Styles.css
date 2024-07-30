@@ -1,0 +1,105 @@
+/* Define a cor de fundo da raiz */
+.root {
+    -fx-background-color: #690202 !important; /* Cor de fundo vermelha */
+}
+/* Estilização básica para o ScrollPane */
+.scroll-pane {
+    -fx-background-color: #f0f0f0; /* Cor de fundo cinza claro */
+}
+/* Estilização para MenuBar e MenuItems */
+.menu-bar {
+    -fx-background-color: #8db986; /* Cor de fundo verde */
+    -fx-text-fill: #ADC52E; /* Cor do texto branco */
+}
+/* Estilização para TitledPane */
+.titled-pane {
+    -fx-background-color: #e0e0e0; /* Cor de fundo cinza claro */
+}
+/* Estilização para ComboBox dentro de TitledPane */
+.titled-pane > .combo-box {
+    -fx-background-color: #D8DACC; /* Cor de fundo amarelo */
+}
+/* Estilização para VBox */
+.vbox {
+    -fx-spacing: 5; /* Espaçamento entre elementos 5px */
+    -fx-alignment: center; /* Centraliza elementos */
+    -fx-font-size: 18px; /* Tamanho da fonte 18px */
+}
+/* Estilização para HBox */
+.hbox {
+    -fx-spacing: 5; /* Espaçamento entre elementos 5px */
+}
+/* Estilização para Label dentro de HBox */
+.hbox > .label {
+    -fx-font-size: 12px; /* Tamanho da fonte 12px */
+    -fx-text-fill: #355c7d; /* Cor do texto azul */
+}
+/* Estilização para TableView */
+.table-view {
+    -fx-font-size: 11px; /* Tamanho da fonte 11px */
+    -fx-border-color: black; /* Cor da borda preta */
+    -fx-border-width: 2px; /* Largura da borda 2px */
+    -fx-border-style: solid; /* Estilo da borda sólido */
+    -fx-font-weight: normal; /* Peso da fonte normal */
+    -fx-alignment: center; /* Centraliza texto */
+    -fx-pref-height: 1000.0; /* Altura preferencial 500.0 */
+}
+/* Estilização para TableCell */
+.table-cell {
+    -fx-text-fill: white; /* Cor do texto branco */
+    -fx-background-color: black; /* Cor de fundo preta */
+    -fx-alignment: center; /* Centraliza texto */
+}
+/* Estilização para os títulos das colunas da TableView */
+.column-header {
+    -fx-background-color: #b8fd99; /* Cor de fundo verde */
+}
+/* Estilização para Labels específicas */
+.label#tituloTableViews,
+.tituloTableViews {
+    -fx-font-size: 18px; /* Tamanho da fonte 18px */
+    -fx-font-weight: bold; /* Peso da fonte em negrito */
+    -fx-padding: 10px; /* Espaçamento interno 10px */
+    -fx-alignment: center; /* Centraliza texto */
+}
+/* Defina uma classe para HBox com espaçamento de 5px e HBox.hgrow ALWAYS */
+.hbox-custom {
+    -fx-fill-width: true; /* Preenche largura */
+    -fx-spacing: 5px; /* Espaçamento entre elementos 5px */
+    -fx-padding: 5px; /* Espaçamento interno 5px */
+    -fx-hgrow: ALWAYS; /* HBox.hgrow ALWAYS */
+}
+/* Defina uma classe para VBox padrão */
+.vbox-custom {
+    -fx-alignment: center; /* Centraliza elementos */
+    -fx-fill-width: true; /* Preenche largura */
+    -fx-pref-height: 1000.0; /* Altura preferencial 1000.0 */
+    -fx-pref-width: 2200.0; /* Largura preferencial 2200.0 */
+    -fx-padding: 5px; /* Espaçamento interno 5px */
+    -fx-spacing: 5px; /* Espaçamento entre elementos 5px */
+    -fx-hgrow: ALWAYS; /* VBox.hgrow ALWAYS */
+}
+/* Defina uma classe para VBox com espaçamento de 3px, fillWidth true e alinhamento TOP_CENTER */
+.vbox-custom-3 {
+    -fx-fill-width: true; /* Preenche largura */
+    -fx-pref-height: 1000.0; /* Altura preferencial 1000.0 */
+    -fx-pref-width: 2200.0; /* Largura preferencial 2200.0 */
+    -fx-hgrow: ALWAYS; /* VBox.hgrow ALWAYS */
+    -fx-padding: 5px; /* Espaçamento interno 5px */
+    -fx-spacing: 3px; /* Espaçamento entre elementos 3px */
+    -fx-alignment: TOP_CENTER; /* Alinhamento ao topo e ao centro */
+}
+/* Defina uma classe para VBox com espaçamento de 25px, fillWidth true e alinhamento TOP_CENTER */
+.vbox-custom-25 {
+    -fx-fill-width: true; /* Preenche largura */
+    -fx-pref-height: 1000.0; /* Altura preferencial 1000.0 */
+    -fx-pref-width: 2200.0; /* Largura preferencial 2200.0 */
+    -fx-padding: 5px; /* Espaçamento interno 5px */
+    -fx-spacing: 25px; /* Espaçamento entre elementos 25px */
+    -fx-hgrow: ALWAYS; /* VBox.hgrow ALWAYS */
+    -fx-alignment: TOP_CENTER; /* Alinhamento ao topo e ao centro */
+}
+/* Defina o tamanho do TextField */
+.custom-text-field {
+    -fx-pref-width: 100px; /* Largura preferencial 100px */
+}
