@@ -2,6 +2,7 @@ package br.gov.df.economia.sistemaauditoriahiveoracle.application.Testes.Sped;
 
 import br.gov.df.economia.sistemaauditoriahiveoracle.db.HiveSpedDatabaseOperations;
 import br.gov.df.economia.sistemaauditoriahiveoracle.gui.util.CSVUtils;
+import br.gov.df.economia.sistemaauditoriahiveoracle.gui.util.Configuracao;
 
 import java.time.LocalDateTime;
 
@@ -38,7 +39,7 @@ public class HiveConnectorSped9900 {
         LocalDateTime dataAtual = LocalDateTime.now().minusDays(15);
 
         // Define o caminho do arquivo CSV
-        String filePath = "C:\\dados\\sped\\HIVE_SPED_9900.csv";
+        String filePath = Configuracao.DIRECTORY_PATH_PENDENCIA_SPED + "HIVE_SPED_9900.csv";
 
         // Chamada do método executeQueryAndSaveToCSV para executar a consulta e salvar no arquivo CSV
         connector.executeQueryAndSaveToCSV(dataAtual, filePath);

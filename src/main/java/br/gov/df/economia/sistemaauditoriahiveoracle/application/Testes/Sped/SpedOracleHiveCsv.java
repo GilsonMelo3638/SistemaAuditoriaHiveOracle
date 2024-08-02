@@ -1,5 +1,7 @@
 package br.gov.df.economia.sistemaauditoriahiveoracle.application.Testes.Sped;
 
+import br.gov.df.economia.sistemaauditoriahiveoracle.gui.util.Configuracao;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -11,9 +13,9 @@ import java.util.stream.Stream;
 public class SpedOracleHiveCsv {
 
     public static void main(String[] args) {
-        String oracleFilePath = "C:\\dados\\sped\\ORACLE_SPED_9900.csv";
-        String hiveFilePath = "C:\\dados\\sped\\HIVE_SPED_9900.csv";
-        String outputFilePath = "C:\\dados\\sped\\Pendencia_Processamento_0000.csv";
+        String oracleFilePath = Configuracao.DIRECTORY_PATH_PENDENCIA_SPED + "ORACLE_SPED_9900.csv";
+        String hiveFilePath = Configuracao.DIRECTORY_PATH_PENDENCIA_SPED + "HIVE_SPED_9900.csv";
+        String outputFilePath = Configuracao.DIRECTORY_PATH_PENDENCIA_SPED + "CPendencia_Processamento_0000.csv";
 
         saveLinesNotInHive(oracleFilePath, hiveFilePath, outputFilePath);
     }
