@@ -58,7 +58,7 @@ public class OracleSpedDatabaseOperations {
                     "AND b.datahora_processamento <= TO_TIMESTAMP(?, 'YYYY-MM-DD HH24:MI:SS') " +
                     "AND r.qtd_reg_blc > 0";
             // Nome do arquivo CSV e caminho
-            String filePath = "C:\\dados\\sped\\ORACLE_SPED_9900.csv";
+            String filePath = Configuracao.DIRECTORY_PATH_PENDENCIA_SPED + "ORACLE_SPED_9900.csv";
 
             try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
                 // Configura os parâmetros da consulta
